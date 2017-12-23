@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>RandoCar4x4 - {% block title %}No Title{% endblock %}</title>
+        <link rel="stylesheet" href="{{ app.request.basePath }}/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        {% block head %}{% endblock %}
+        <link rel="shortcut icon" href="{{ app.request.basePath }}/favicon.ico" />
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expdanded="false" data-target="#randocar_menu_top">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">RandoCar4x4</a>
+                <div class="collapse navbar-collapse navbar-right" id="randocar_menu_top">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Circuits et tarifs <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Excursion</a></li>
+                                <li><a href="#">Randonnée</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+
+        <footer class="footer navbar-fixed-bottom">
+            <div class="container">
+                <div class="col-xs-6">
+                    <p>© 2017 Randocar4x4</p>
+                </div>
+                <div class="col-xs-6">
+                    <a href="tel:" style="float:right;">06 81 67 24 77</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        {% block closing_scripts %}{% endblock %}
+    </body>
+</html>

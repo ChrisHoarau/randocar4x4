@@ -1,0 +1,10 @@
+body {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.footer {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background-color: red;
+}
